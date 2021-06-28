@@ -1,0 +1,35 @@
+.CategoriesWrapper {
+  position: sticky;
+  top: 0px;
+  justify-content: center;
+  background-color: white;
+  z-index: 100;
+  flex-direction: row;
+}
+
+.Scroll {
+  flex-direction: row;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  /* TODO */
+  width: 2200px !important;
+  white-space: nowrap;
+}
+.CategoriesSection {
+  width: 70vw;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.Category {
+  overflow: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Category:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
