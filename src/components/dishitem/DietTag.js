@@ -2,7 +2,7 @@ import React from "react";
 import "./DietTag.css";
 import Vegan from "../svgs/veganleaf.svg";
 import Vegetarian from "../svgs/carrot.svg";
-import gf from "../svgs/gf.png";
+// import gf from "../svgs/gf.png";
 
 const DietTag = ({ id, onRequest }) => {
   const dietaryPref = {
@@ -22,7 +22,13 @@ const DietTag = ({ id, onRequest }) => {
       }}
     >
       <img
-        src={id == "vegan" ? Vegan : id == "vegetarian" ? Vegetarian : gf}
+        src={
+          id == "vegan"
+            ? Vegan
+            : // id == "vegetarian" ?
+              Vegetarian
+          // : gf
+        }
         style={{ height: 18 }}
         alt="id"
       ></img>

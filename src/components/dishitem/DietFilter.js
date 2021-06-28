@@ -2,7 +2,7 @@ import React from "react";
 import "./DietTag.css";
 import Vegan from "../svgs/veganleaf.svg";
 import Vegetarian from "../svgs/carrot.svg";
-import gf from "../svgs/gf.png";
+// import gf from "../svgs/gf.png";
 
 // Should probably inherit from DietTag or share common parent but w/e lol
 
@@ -28,7 +28,13 @@ const DietFilter = ({ id, selected, onPress }) => {
       }}
     >
       <img
-        src={id == "vegan" ? Vegan : id == "vegetarian" ? Vegetarian : gf}
+        src={
+          id == "vegan"
+            ? Vegan
+            : // id == "vegetarian" ?
+              Vegetarian
+          // : gf
+        }
         style={{ height: 18 }}
         alt="id"
       ></img>
