@@ -36,12 +36,15 @@ const Widget = ({ restaurantId }) => {
   useEffect(() => {
     axios
       .get(
-        "https://firestore.googleapis.com/v1/projects/menu-buddy-9c09c/databases/(default)/documents/restaurants/sArCawBFjq8NEdHfOOS8"
+        `https://firestore.googleapis.com/v1/projects/menu-buddy-9c09c/databases/(default)/documents/restaurants/${restaurantId}`
       )
       .then((a) => {
         setRData(a.data.fields);
         let c = a.data.fields.categories.mapValue.fields;
         setCurrentCategory(c[Object.keys(c)[0]].mapValue.fields.id.stringValue);
+      })
+      .catch((e) => {
+        alert(e?.message);
       });
   }, []);
 
