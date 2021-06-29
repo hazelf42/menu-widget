@@ -1,6 +1,6 @@
 import React from "react";
 import DietTag from "./DietTag";
-import "./dishitem.css";
+// import "./dishitem.css";
 
 const DishItem = ({ dish }) => {
   return (

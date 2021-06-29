@@ -80,7 +80,7 @@
     "@storybook/addons": "5.2.8",
     "@storybook/react": "5.2.8",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "10.0.3",
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
     "babel-preset-airbnb": "4.4.0",
@@ -105,9 +105,8 @@
     "node-sass": "4.13.0",
     "postcss-increase-specificity": "0.6.0",
     "postcss-loader": "3.0.0",
-    "sass-loader": "8.0.0",
+    "sass-loader": "10.1.1",
     "style-loader": "1.1.2",
-    "svg-url-loader": "^7.1.1",
     "webpack": "4.41.5",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.1",
@@ -122,6 +121,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^4.2.0",
-    "react-transition-group": "^4.0.0"
+    "react-transition-group": "^4.0.0",
+    "sass-loader": "10.1.1",
+    "url-loader": "^4.1.1"
   }
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
-import "./widget.scss";
-import "./widget.css";
+// import "./widget.css";
 import axios from "axios";
 import { Button, TextField } from "@material-ui/core";
 import { filteredDishes, getFirstCategory, toDish } from "./functions";

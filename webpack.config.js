@@ -41,19 +41,14 @@ const defaultConfig = {
           emitWarning: true,
         },
       },
-
-      {
-        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
-        loader: "url-loader?limit=100000",
-      },
       {
         test: /\.(scss|css)$/,
         use: [
           // fallback to style-loader in development
           // devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-          "style-loader",
+          // "style-loader",
           "css-loader",
-          "cssimportant-loader",
+          // "cssimportant-loader",
           {
             loader: "postcss-loader",
             options: {

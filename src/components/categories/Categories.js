@@ -2,8 +2,8 @@ import { Button } from "@material-ui/core";
 import React, { useState, useRef } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import { filteredDishes } from "../functions";
-import "../widget.css";
-import "./Categories.css";
+// import "../widget.css";
+// import "./Categories.css";
 const CategoriesMenu = ({
   rData,
   currentCategory,

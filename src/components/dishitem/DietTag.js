@@ -1,7 +1,7 @@
 import React from "react";
-import "./DietTag.css";
-import Vegan from "../svgs/veganleaf.svg";
-import Vegetarian from "../svgs/carrot.svg";
+// import "./DietTag.css";
+// import Vegan from "../svgs/veganleaf.svg";
+// import Vegetarian from "../svgs/carrot.svg";
 // import gf from "../svgs/gf.png";
 
 const DietTag = ({ id, onRequest }) => {
@@ -21,7 +21,7 @@ const DietTag = ({ id, onRequest }) => {
         backgroundColor: "#ccc",
       }}
     >
-      <img
+      {/* <img
         src={
           id == "vegan"
             ? Vegan
@@ -31,7 +31,7 @@ const DietTag = ({ id, onRequest }) => {
         }
         style={{ height: 18 }}
         alt="id"
-      ></img>
+      ></img> */}
       <div style={{ width: 5 }} /> {dietary?.name} {onRequest && "on request"}
     </div>
   );
