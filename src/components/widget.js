@@ -103,7 +103,9 @@ const Widget = ({ restaurantId }) => {
               );
               return filteredDishArray.length > 0 ? (
                 <div id={category.id.stringValue}>
-                  <h2>{category.name.stringValue}</h2>
+                  <h2 style={{ backgroundColor: "red" }}>
+                    {category.name.stringValue}
+                  </h2>
                   <div
                     className="Wrap"
                     style={{
